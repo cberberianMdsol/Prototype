@@ -9,6 +9,8 @@ using Medidata.MAuth.AspNetCore;
 using Medidata.MDLogging;
 using Medidata.MDLogging.NetCore;
 using Medidata.MedsExtractor.DataFileConversion.WebApi.Config;
+using Medidata.SmokeTests;
+using Medidata.SmokeTests.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -97,8 +99,8 @@ namespace Medidata.MedsExtractor.DataFileConversion.WebApi
             app.UseStaticFiles()
                 .UseAppStatus()
                 .UseAppVersion()
-                .UseZipkin(Configuration["SubsystemName"], BypassZipkin);
-//                .UseSmokeTests(smokeTestMiddlewareOptions => smokeTestMiddlewareOptions.TestResolver = serviceType => serviceProvider.GetService(serviceType) as ISmokeTest);
+                .UseZipkin(Configuration["SubsystemName"], BypassZipkin)
+                .UseSmokeTests(smokeTestMiddlewareOptions => smokeTestMiddlewareOptions.TestResolver = serviceType => serviceProvider.GetService(serviceType) as ISmokeTest);
 
 
 
