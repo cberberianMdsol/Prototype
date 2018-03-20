@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Moq" Version="4.8.2" />
+    <PackageReference Include="nunit" Version="3.9.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.9.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Medidata.MedsExtractor.CacheAccess\Medidata.MedsExtractor.CacheAccess.csproj" />
+    <ProjectReference Include="..\Medidata.MedsExtractor.DataFileConversion.Contracts\Medidata.MedsExtractor.DataFileConversion.Contracts.csproj" />
+    <ProjectReference Include="..\Medidata.MedsExtractor.DataFileConversionManager\Medidata.MedsExtractor.DataFileConversionManager.csproj" />
+    <ProjectReference Include="..\Medidata.MedsExtractor.DataFileTransformEngine\Medidata.MedsExtractor.DataFileTransformEngine.csproj" />
+    <ProjectReference Include="..\Medidata.MedsExtractor.FileAccess\Medidata.MedsExtractor.FileAccess.csproj" />
+    <ProjectReference Include="..\Medidata.MedsExtractor.S3Utility\Medidata.MedsExtractor.S3Utility.csproj" />
+  </ItemGroup>
+
+</Project>

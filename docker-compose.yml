@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  medidata.medsextractor.datafileconversion.webapi:
+    image: medidata.medsextractor.datafileconversion.webapi
+    build:
+      context: .
+      dockerfile: Medidata.MedsExtractor.DataFileConversion.WebApi/Dockerfile

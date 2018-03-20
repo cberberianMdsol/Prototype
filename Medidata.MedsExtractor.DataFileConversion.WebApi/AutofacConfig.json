@@ -1,0 +1,24 @@
+﻿{
+  "components": [
+    {
+      "type": "Medidata.MedsExtractor.UI.Config.JobManagerUIConfig, Medidata.MedsExtractor.UI",
+      "services": [ { "type": "Medidata.MedsExtractor.UI.Base.IConfig, Medidata.MedsExtractor.UI.Base" } ],
+      "instanceScope": "singleinstance"
+    },
+    {
+      "type": "Medidata.MedsExtractor.UI.Utility.SessionStore, Medidata.MedsExtractor.UI",
+      "services": [ { "type": "Medidata.MedsExtractor.UI.Contracts.ISessionStore, Medidata.MedsExtractor.UI" } ],
+      "instanceScope": "singleinstance"
+    },
+    {
+      "type": "Medidata.MedsExtractor.UI.JobManagerAccess.JobManagerAccess, Medidata.MedsExtractor.UI.JobManagerAccess",
+      "services": [ { "type": "Medidata.MedsExtractor.UI.JobManagerAccess.Contracts.IJobManagerAccess, Medidata.MedsExtractor.UI.JobManagerAccess" } ],
+      "instanceScope": "singleinstance"
+    },
+    {
+      "type": "Medidata.MedsExtractor.UI.JobManagerAccess.JobManagerResources, Medidata.MedsExtractor.UI.JobManagerAccess",
+      "services": [ { "type": "Medidata.MedsExtractor.UI.JobManagerAccess.Contracts.IJobManagerResources, Medidata.MedsExtractor.UI.JobManagerAccess" } ],
+      "instanceScope": "singleinstance"
+    }
+  ]
+}
